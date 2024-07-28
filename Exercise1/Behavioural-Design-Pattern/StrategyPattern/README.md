@@ -19,18 +19,17 @@ This project demonstrates the implementation of the Strategy design pattern in J
 1. __Compilation and Execution__:
 
    * Compile the Java files using the command:
-javac StrategyPatternDemo.java
-Run the compiled code with:
-Copy code
-java StrategyPatternDemo
-Expected Output:
+      javac StrategyPatternDemo.java
+   * Run the compiled code with:
+      java StrategyPatternDemo
+2. __Expected Output__:
 
-The program outputs messages indicating the amount paid using the selected payment method, demonstrating the flexibility of the strategy pattern in switching between different algorithms.
-Benefits of the Strategy Pattern
-Flexibility: Allows easy switching between different strategies (e.g., different payment methods) without altering the context class.
-Scalability: New strategies can be introduced without modifying existing code, adhering to the Open/Closed Principle.
-Decoupling: Separates the algorithm's implementation from its usage, making the system more modular and easier to maintain.
-Common Use Cases
-Payment Systems: Handling multiple payment methods such as credit cards, PayPal, or digital wallets.
-Sorting Algorithms: Switching between different sorting algorithms based on specific criteria or dataset characteristics.
-Compression Algorithms: Using different compression techniques like ZIP or GZIP depending on the requirements.
+   * The program outputs messages indicating the amount paid using the selected payment method,      demonstrating the flexibility of the strategy pattern in switching between different            algorithms.
+## Benefits of the Strategy Pattern
+* __Flexibility__: Allows easy switching between different strategies (e.g., different payment methods) without altering the context class.
+* __Scalability__: New strategies can be introduced without modifying existing code, adhering to the Open/Closed Principle.
+* __Decoupling__: Separates the algorithm's implementation from its usage, making the system more modular and easier to maintain.
+## Common Use Cases
+* __Payment Systems__: Handling multiple payment methods such as credit cards, PayPal, or digital wallets.
+* __Sorting Algorithms__: Switching between different sorting algorithms based on specific criteria or dataset characteristics.
+* __Compression Algorithms__: Using different compression techniques like ZIP or GZIP depending on the requirements.
