@@ -21,9 +21,9 @@ This project demonstrates the implementation of the Observer design pattern in J
 2. __Expected Output__:
 
     * The program will output notifications to the console, indicating that each investor has         been notified of the new stock price whenever it changes.
-Benefits of the Observer Pattern
-Decoupling: The subject is not tightly coupled with its observers. It only knows that they adhere to the Observer interface, not their concrete implementations.
-Flexibility: New observers can be added or existing ones removed at runtime, allowing for dynamic changes in how updates are handled.
-Common Use Cases
-Event handling systems (e.g., GUI events, system notifications)
-Real-time data updates (e.g., stock market tickers, weather updates)
+## Benefits of the Observer Pattern
+   * __Decoupling__: The subject is not tightly coupled with its observers. It only knows that they adhere to the Observer interface, not their concrete implementations.
+   * __Flexibility__: New observers can be added or existing ones removed at runtime, allowing for dynamic changes in how updates are handled.
+## Common Use Cases
+   * Event handling systems (e.g., GUI events, system notifications)
+   * Real-time data updates (e.g., stock market tickers, weather updates)
