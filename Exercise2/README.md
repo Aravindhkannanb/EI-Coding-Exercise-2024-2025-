@@ -1,29 +1,33 @@
+## Mars Rover Simulation
 ## Overview
-This project demonstrates the implementation of the Observer design pattern in Java. The Observer pattern is a behavioral design pattern that establishes a one-to-many relationship between objects, ensuring that when the state of one object changes, all its dependent objects are notified and updated automatically.
-
-## Components
-* __Observer Interface__: An interface that defines the method update(), which observers must implement to receive updates from the subject.
-
-* __Subject Class (Stock)__: This class maintains a list of observers and provides methods to add or remove them. It also manages the state (stock price) and notifies all registered observers when the state changes.
-
-* __Concrete Observer (Investor)__: A class that implements the Observer interface. It defines how an observer reacts to updates from the subject, such as updating the investor with the new stock price.
-
-* __Main Class (ObserverPatternDemo)__: Contains the main method to demonstrate the observer pattern in action. It sets up instances of the subject and observers, registers observers with the subject, and changes the state of the subject to trigger notifications.
-
+The Mars Rover Simulation demonstrates the Command design pattern in the context of controlling a Mars rover on a grid-based terrain. It allows for flexible and extensible control over the rover's movements and operations through encapsulated command objects.
+## Design Pattern: Command
+The Command pattern is a behavioral design pattern that encapsulates a request as an object, thereby allowing for parameterization of clients with queues, logs, or operations, and supporting undoable actions. In this simulation, the pattern is used to encapsulate commands like moving forward, turning left, and turning right.
+## Structure
+The Mars Rover Simulation consists of the following components:
+1. __Rover (Receiver)__
+   * Represents the rover, maintaining its state and defining operations like moving and turning.
+2. __Command (Interface)__
+   * Declares the execute method for performing an action on the rover.
+3. __Concrete Commands__
+   * __MoveCommand__: Moves the rover forward in its current direction.
+   * __TurnLeftCommand__: Turns the rover left.
+   * __TurnRightCommand__: Turns the rover right.
+4. __CommandExecutor (Invoker)__
+   * Executes the commands issued to the rover.
+5. __Main (Client)__
+   * The client creates concrete command objects and uses the CommandExecutor to run them, controlling the rover's behavior on the grid.
 ## How It Works
-1. __Setup__: Observers (e.g., investors) are registered with the Subject (e.g., stock) using methods provided by the subject.
-2. __Notification__: When the subject's state changes (such as a stock price update), it calls a notification method that informs all registered observers of the change.
-3. __Update__: The observers' update() method is invoked, allowing each observer to react appropriately to the change, such as displaying the new stock price.
-## Usage
-1. __Compilation and Execution__:
-    * Compile the Java files.
-    * Run the compiled code to see the observer pattern in action.
-2. __Expected Output__:
-
-    * The program will output notifications to the console, indicating that each investor has         been notified of the new stock price whenever it changes.
-## Benefits of the Observer Pattern
-   * __Decoupling__: The subject is not tightly coupled with its observers. It only knows that they adhere to the Observer interface, not their concrete implementations.
-   * __Flexibility__: New observers can be added or existing ones removed at runtime, allowing for dynamic changes in how updates are handled.
-## Common Use Cases
-   * Event handling systems (e.g., GUI events, system notifications)
-   * Real-time data updates (e.g., stock market tickers, weather updates)
+   1. The Rover class maintains its current position and direction on the grid and defines the operations it can perform.
+   2. Each command encapsulates a specific action for the rover (moving forward, turning left, or turning right).
+   3. The CommandExecutor receives commands and executes them in the order they are received.
+   4. The client (main program) creates command objects and passes them to the executor to control the rover.
+## Key Features
+   * __Decoupling__: Separates the object that invokes an operation from the one that performs it, allowing for flexible command execution.
+   * __Extensibility__: New commands can be added without modifying existing code, adhering to the Open/Closed Principle.
+   * __Uniform Command Execution__: Provides a consistent way to issue commands to the rover, making it easier to extend and manage the control logic.
+## Use Case
+The Command pattern in the Mars Rover Simulation is particularly useful for:
+   * __Remote Control Systems__: Abstracts the command mechanism, making it easier to manage and extend.
+   * __Scheduling and Queuing Commands__: Commands can be queued or executed at specific times, supporting more complex control logic.
+   * __Building High-Level Operations__: Complex behaviors can be constructed from primitive operations, making the system modular and maintainable.
