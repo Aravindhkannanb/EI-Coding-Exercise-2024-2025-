@@ -19,7 +19,7 @@ This project demonstrates the implementation of the Factory design pattern in Ja
     * The Notification interface provides a contract for notification types.
 2. __Concrete Implementations__:
 
-    * SMSNotification and EmailNotification implement the Notification interface.
+    * SMS Notification and EmailNotification implement the Notification interface.
 3. __Factory Method__  :
 
     * The NotificationFactory.createNotification(String type) method decides which notification type to instantiate based on the provided string.
@@ -27,9 +27,9 @@ This project demonstrates the implementation of the Factory design pattern in Ja
 
     * The FactoryPatternDemo class demonstrates using the factory to create and use different notification types.
 ## Benefits of the Factory Pattern
-    * __Encapsulation__: Encapsulates object creation, making client code independent of specific classes.
-    * __Flexibility__: Easily extendable to include new notification types.
-    * __Decoupling__: Reduces dependencies on concrete classes.
+   * __Encapsulation__: Encapsulates object creation, making client code independent of specific classes.
+   * __Flexibility__: Easily extendable to include new notification types.
+   * __Decoupling__: Reduces dependencies on concrete classes.
 ## Common Use Cases
-    * __Notification Systems__: Generating various notifications like SMS, Email, etc.
-    * __Document Creation__: Creating different types of documents (PDF, Word, etc.).
+   * __Notification Systems__: Generating various notifications like SMS, Email, etc.
+   * __Document Creation__: Creating different types of documents (PDF, Word, etc.).
