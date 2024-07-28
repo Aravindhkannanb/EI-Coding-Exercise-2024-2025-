@@ -33,6 +33,6 @@ This project demonstrates the implementation of the Adapter design pattern in Ja
     * java AdapterPatternDemo
     * The output will demonstrate playing an MP3 file directly and attempting to play a WAV file using the adapter.
 ## Benefits of the Adapter Pattern
-  * __Compatibility__: Allows incompatible interfaces to work together.
-  *__Reusability__: Promotes the reuse of existing functionality.
-  *__Flexibility__: Easy to add new adapters for different types
+* __Compatibility__: Allows incompatible interfaces to work together.
+*__Reusability__: Promotes the reuse of existing functionality.
+*__Flexibility__: Easy to add new adapters for different types
