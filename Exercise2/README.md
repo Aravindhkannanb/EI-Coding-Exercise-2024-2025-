@@ -2,7 +2,7 @@
 This project demonstrates the implementation of the Observer design pattern in Java. The Observer pattern is a behavioral design pattern that establishes a one-to-many relationship between objects, ensuring that when the state of one object changes, all its dependent objects are notified and updated automatically.
 
 ## Components
-Observer Interface: An interface that defines the method update(), which observers must implement to receive updates from the subject.
+* Observer Interface: An interface that defines the method update(), which observers must implement to receive updates from the subject.
 
 * Subject Class (Stock): This class maintains a list of observers and provides methods to add or remove them. It also manages the state (stock price) and notifies all registered observers when the state changes.
 
@@ -10,11 +10,11 @@ Observer Interface: An interface that defines the method update(), which observe
 
 * Main Class (ObserverPatternDemo): Contains the main method to demonstrate the observer pattern in action. It sets up instances of the subject and observers, registers observers with the subject, and changes the state of the subject to trigger notifications.
 
-How It Works
-Setup: Observers (e.g., investors) are registered with the Subject (e.g., stock) using methods provided by the subject.
-Notification: When the subject's state changes (such as a stock price update), it calls a notification method that informs all registered observers of the change.
-Update: The observers' update() method is invoked, allowing each observer to react appropriately to the change, such as displaying the new stock price.
-Usage
+## How It Works
+1 Setup: Observers (e.g., investors) are registered with the Subject (e.g., stock) using methods provided by the subject.
+2 Notification: When the subject's state changes (such as a stock price update), it calls a notification method that informs all registered observers of the change.
+3 Update: The observers' update() method is invoked, allowing each observer to react appropriately to the change, such as displaying the new stock price.
+## Usage
 Compilation and Execution:
 
 Compile the Java files.
