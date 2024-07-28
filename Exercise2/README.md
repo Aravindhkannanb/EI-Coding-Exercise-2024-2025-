@@ -11,9 +11,9 @@ This project demonstrates the implementation of the Observer design pattern in J
 * Main Class (ObserverPatternDemo): Contains the main method to demonstrate the observer pattern in action. It sets up instances of the subject and observers, registers observers with the subject, and changes the state of the subject to trigger notifications.
 
 ## How It Works
-1 Setup: Observers (e.g., investors) are registered with the Subject (e.g., stock) using methods provided by the subject.
-2 Notification: When the subject's state changes (such as a stock price update), it calls a notification method that informs all registered observers of the change.
-3 Update: The observers' update() method is invoked, allowing each observer to react appropriately to the change, such as displaying the new stock price.
+1. Setup: Observers (e.g., investors) are registered with the Subject (e.g., stock) using methods provided by the subject.
+2. Notification: When the subject's state changes (such as a stock price update), it calls a notification method that informs all registered observers of the change.
+3. Update: The observers' update() method is invoked, allowing each observer to react appropriately to the change, such as displaying the new stock price.
 ## Usage
 Compilation and Execution:
 
