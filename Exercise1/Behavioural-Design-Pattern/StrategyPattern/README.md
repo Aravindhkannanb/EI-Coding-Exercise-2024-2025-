@@ -7,19 +7,18 @@ This project demonstrates the implementation of the Strategy design pattern in J
     * An interface defining a method that must be implemented by all concrete strategies to handle payment processing.
 * __Concrete Strategies__
 
-CreditCardPayment: A concrete implementation of the PaymentStrategy interface, handling payments via credit cards.
-PayPalPayment: Another implementation of the PaymentStrategy interface, handling payments through PayPal.
-Context (ShoppingCart)
+   * __CreditCardPayment__: A concrete implementation of the PaymentStrategy interface,             handling payments via credit cards.
+   * __PayPalPayment__: Another implementation of the PaymentStrategy interface, handling            payments through PayPal.
+* __Context (ShoppingCart)__
 
-This class maintains a reference to a PaymentStrategy object and uses this strategy to perform payment operations. It allows the payment method to be changed at runtime.
-How It Works
-Strategy Selection: The client (main program) sets the desired payment strategy by providing an implementation of the PaymentStrategy interface to the ShoppingCart context.
-Payment Execution: The ShoppingCart uses the set strategy to process the payment when the checkout method is called, thereby executing the strategy's specific payment method.
-Usage
-Compilation and Execution:
+   * This class maintains a reference to a PaymentStrategy object and uses this strategy to          perform payment operations. It allows the payment method to be changed at runtime.
+## How It Works
+1. __Strategy Selection__: The client (main program) sets the desired payment strategy by providing an implementation of the PaymentStrategy interface to the ShoppingCart context.
+2. __Payment Execution__: The ShoppingCart uses the set strategy to process the payment when the checkout method is called, thereby executing the strategy's specific payment method.
+## Usage
+1. __Compilation and Execution__:
 
-Compile the Java files using the command:
-Copy code
+   * Compile the Java files using the command:
 javac StrategyPatternDemo.java
 Run the compiled code with:
 Copy code
