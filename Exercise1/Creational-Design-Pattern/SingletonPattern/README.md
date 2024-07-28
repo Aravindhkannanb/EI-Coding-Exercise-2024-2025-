@@ -5,10 +5,10 @@ This project demonstrates the implementation of the Singleton design pattern in 
 ## Components
 * __Cache Class__
 
-The Cache class is designed as a singleton, meaning only one instance of the class can exist at any time. It contains a private cacheMap (a HashMap) to store key-value pairs, where keys are strings and values are objects.
+   The Cache class is designed as a singleton, meaning only one instance of the class can exist at any time. It contains a private cacheMap (a HashMap) to store key-value pairs, where keys are strings and values are objects.
 * __User Class__
 
-A simple class representing a user, containing a name and an age. This class is used to demonstrate storing and retrieving objects from the cache.
+   A simple class representing a user, containing a name and an age. This class is used to demonstrate storing and retrieving objects from the cache.
 ## How It Works
 1. __Singleton Instance Creation__:
 
